@@ -13,14 +13,16 @@ defmodule Phoenix13apiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Phoenix13apiWeb do
-    pipe_through :browser # Use the default browser stack
+  # scope "/", Phoenix13apiWeb do
+  #   pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
-  end
+  #   get "/", PageController, :index
+  # end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Phoenix13apiWeb do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", Phoenix13apiWeb do
+    pipe_through :api
+
+    get "/users", UserController, :index
+  end
 end
