@@ -53,6 +53,6 @@ config :phoenix13api, Phoenix13api.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
   password: "",
-  database: "phoenix13api_dev",
+  database: "learn_phoenix13api_dev",
   hostname: "localhost",
   pool_size: 10
