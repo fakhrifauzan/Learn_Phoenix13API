@@ -23,6 +23,8 @@ defmodule Phoenix13apiWeb.Router do
   scope "/api/v1", Phoenix13apiWeb do
     pipe_through :api
 
+    # resources "/users", UserController, except: [:new, :edit]
     get "/users", UserController, :index
+    get "/users/:id", UserController, :show
   end
 end
