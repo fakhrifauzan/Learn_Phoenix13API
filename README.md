@@ -1,5 +1,7 @@
 # Phoenix13api
 
+Tutorial : https://becoming-functional.com/building-a-rest-api-with-phoenix-1-3-part-1-9f8754aeaa87
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
